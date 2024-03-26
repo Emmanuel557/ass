@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --darkblue: hsl(233, 26%, 24%);
+    --limegreen: hsl(136, 65%, 51%);
+    --brightcyan: hsl(192, 70%, 51%);
+    --GrayishBlue: hsl(233, 8%, 62%);
+    --LightGrayishBlue: hsl(220, 16%, 96%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+    --background: linear-gradient(to right, hsl(234, 27%, 28%),hsl(0, 68%, 44%));
+    --other: linear-gradient(to right, hsl(0, 0%, 97%),hsl(234, 27%, 28%));
+    --other1: linear-gradient(to right,hsl(234, 27%, 28%),hsl(0, 0%, 97%));
+    --other2: linear-gradient(to right, hsl(0, 68%, 44%),hsl(0, 0%, 97%));
+}
+body{
+    background: var(--other1);
+}
+.burg{
+    display: none;
+}
+.wrap{
+    margin: 1.5rem;
+}
+.img1{
+    margin-left: 3rem;
+}
+.rowe{
+    display: flex;
+}
+.nav > ul > li{
+    list-style-type: none;
+}
+.nav > ul > li > a{
+    text-decoration: none;
+    color: var(--White);
+}
+.nav > ul > li > a:hover{
+    color: var(--limegreen);
+}
+.but1{
+    margin-top: -.2rem;
+    margin-left: 9rem;
+    background: linear-gradient(to right, hsl(136, 65%, 51%),hsl(192, 70%, 51%));
+    color: var(--White);
+    text-align: center;
+    border: none;
+    outline: none;
+    padding: .3rem 1rem;
+    border-radius: 1.5rem;
+}
+
+.but2{
+    margin-top: .5rem;
+    margin-left: -.1rem;
+    background: linear-gradient(to right, hsl(136, 65%, 51%),hsl(192, 70%, 51%));
+    color: var(--White);
+    text-align: center;
+    border: none;
+    outline: none;
+    padding: .3rem 1rem;
+    border-radius: 1.5rem;
+}
+.w,.w2{
+    color: var(--White);
+}
+.mainwrap{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: var(--other1);
+    /* background: var(--VeryLightGray); */
+    /* background-image: url(./images/bg-intro-desktop.svg); */
+    background-position: top right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.wrap1{
+    width: 38%;
+    margin: 12rem 0 8rem 5rem;
+}
+.warp2{
+    width: 20%;
+}
+.img2{
+    width: 70%;
+    margin:6rem 0 0 8rem;
+    border-radius: 1rem;
+}
+.ham{
+    width: 100%;
+    /* background: var(--LightGrayishBlue); */
+    background: var(--other);
+    display: block; 
+    border-top-right-radius: 11rem;
+    border-bottom-left-radius: 11rem;
+    overflow-x: hidden;
+}
+.mov{
+    width: 45%;
+    margin: 5rem;
+    padding-top: 3rem;
+}
+.mov > h2, .me{
+    margin-bottom: 2rem;
+}
+.ho1{
+    width: 100%;
+    margin: 5rem;
+    display: flex;
+}
+.rap{
+    width: 20%;
+    margin-right: 2.5rem;
+    padding: 1rem;
+    border: .1rem solid var(--darkblue);
+    border-radius: .4rem;
+}
+h3{
+    margin-bottom: 1.5rem;
+}
+.babs{
+    /* background: var(--VeryLightGray); */
+    background: var(--other2);
+    border-top-left-radius: 11rem;
+    border-bottom-right-radius: 11rem;
+}
+.mainw{
+    display: block;
+    margin: 5rem;
+    padding: 3rem 0 0 0rem;
+    
+}
+.fle{
+    width: 100%;
+    display: flex;
+    padding-top: 2rem;
+    /* flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; */
+}
+.sma{
+    width: 21%;
+    display: block;
+    margin-right: 3rem;
+    margin-bottom: 5rem;
+    background: var(--White);
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+}
+.dg{
+    padding: 1rem;
+}
+.ban{
+    width: 100%;
+    border-top-right-radius: .4rem;
+    border-top-left-radius: .4rem;
+}
+.kai{
+    height: 23vh;
+}
+.dg > h5:hover{
+    color: var(--limegreen);
+    cursor: pointer;
+}
+footer{
+    background: var(--darkblue);
+}
+.pad{
+    margin: 1rem;
+    padding: 2rem;
+}
+.colo{
+    margin-bottom: 1.5rem;
+    /* fill: var(--White); */
+    background: var(--other);
+}
+.fa > p{
+    color: var(--White);
+}
+.fa > p:hover{
+    color: var(--limegreen);
+    cursor: pointer;
+}
+.but3{
+    background: linear-gradient(to right, hsl(136, 65%, 51%),hsl(192, 70%, 51%));
+    color: var(--White);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border: none;
+    outline: none;
+    padding: .3rem 1rem;
+    border-radius: 1.5rem;
+}
+.foot:hover{
+    background: var(--limegreen);
+}
+.cal{
+    color: var(--VeryLightGray);
+    opacity: .1;
+}
+.neo{
+    fill: var(--limegreen);
+    transition: fill 0.3s ease-in-out;
+}
+.neo:hover{
+    fill: var(--limegreen);
+}
+@media(max-width:1176px){
+    .wrap1{
+        margin-top: 7rem;
+    }
+}
+@media(max-width:1169px){
+    .hov{
+        margin-right: -.1rem;
+    }
+}
+@media(max-width:1145px){
+    .hov{
+        margin-right: -.2rem;
+    }
+    .img2{
+        width: 60%;
+    }
+}
+@media(max-width:480px){
+    body,.wrap1{
+        width: 100%;
+    }
+    .wrap1{
+        margin: 4rem 0 2rem 1rem;
+    }
+    .mainwrap,.ham{
+        flex-direction: column;
+    }
+    .img2{
+        display: none;
+    }
+    .ham{
+        width: 100%;
+        flex-direction: column;
+        margin-top: 15rem;
+    }
+    .mov{
+        margin: 4rem 1rem 1rem 1rem;
+        width: 100%;
+    }
+    .ho1{
+        flex-direction: column;
+        margin: .7rem;
+    }
+    .rap{
+        width: 100%;
+    }
+    .sma,.dg{
+        width: 100%;
+        margin: 1rem;
+    }
+    .ham,.dg{
+        width: 100%;
+        margin-top: -17rem;
+        border-top-right-radius: 2rem;
+        border-bottom-left-radius: 2rem;
+    }
+    .img1{
+        margin-left: -.3rem;
+    }
+    .but1,.hov{
+        display: none;
+    }
+    .babs{
+        display: none;
+    }
+    .burg{
+        display: inline-flex;
+        margin-left: 14rem;
+        margin-top: -3rem;
+    }
+    footer{
+        margin-top: 2rem;
+        border-radius: 1rem;
+    }
+    .pad{
+        flex-direction: column;
+    }
+}
